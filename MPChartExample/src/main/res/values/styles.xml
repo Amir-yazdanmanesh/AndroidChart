@@ -1,8 +1,8 @@
 <resources>
 
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <style name="Theme.MPChart" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 
 </resources>
