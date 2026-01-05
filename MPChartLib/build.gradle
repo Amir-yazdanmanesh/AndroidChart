@@ -1,8 +1,10 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 }
 
 group = 'com.github.Amir-yazdanmanesh'
+version = '3.2.0'
 
 android {
     namespace 'com.github.mikephil.charting'
@@ -11,8 +13,8 @@ android {
     defaultConfig {
         minSdk 21
         targetSdk 34
-        versionCode 3
-        versionName '3.1.0'
+        versionCode 4
+        versionName '3.2.0'
     }
 
     buildTypes {
@@ -30,6 +32,13 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
@@ -37,24 +46,15 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
 }
 
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    archiveClassifier.set('sources')
-}
-
-task javadoc(type: Javadoc) {
-    options.charSet = 'UTF-8'
-    failOnError false
-    source = android.sourceSets.main.java.sourceFiles
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    archiveClassifier.set('javadoc')
-    from javadoc.destinationDir
-}
-
-artifacts {
-    archives sourcesJar
-    archives javadocJar
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.Amir-yazdanmanesh'
+                artifactId = 'MPAndroidChart-Compose'
+                version = project.version
+            }
+        }
+    }
 }
