@@ -2,21 +2,29 @@
 
 [![Release](https://img.shields.io/github/release/Amir-yazdanmanesh/MPAndroidChart-Compose.svg?style=flat)](https://jitpack.io/#Amir-yazdanmanesh/MPAndroidChart-Compose)
 [![API](https://img.shields.io/badge/API-21%2B-green.svg?style=flat)](https://android-arsenal.com/api?level=21)
+[![GitHub stars](https://img.shields.io/github/stars/Amir-yazdanmanesh/MPAndroidChart-Compose?style=social)](https://github.com/Amir-yazdanmanesh/MPAndroidChart-Compose/stargazers)
 
 A powerful & easy to use chart library for Android, updated for modern Android development with Jetpack Compose example app.
 
 Based on the original [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) by Philipp Jahoda.
 
+## Support This Project
+
+If you find this library useful, please consider giving it a star! Your support helps keep this project alive and motivates continued development and maintenance.
+
+[![Star this repo](https://img.shields.io/github/stars/Amir-yazdanmanesh/MPAndroidChart-Compose?style=for-the-badge&logo=github)](https://github.com/Amir-yazdanmanesh/MPAndroidChart-Compose)
+
 ## Table of Contents
-1. [Quick Start](#quick-start)
+1. [Support This Project](#support-this-project)
+2. [Quick Start](#quick-start)
    1. [Gradle Setup](#gradle-setup)
    2. [Maven Setup](#maven-setup)
-2. [Documentation](#documentation)
-3. [Examples](#examples)
-4. [Questions & Issues](#questions--issues)
-5. [More Examples](#more-examples)
-6. [License](#license)
-7. [Credits](#credits)
+3. [Documentation](#documentation)
+4. [Examples](#examples)
+5. [Questions & Issues](#questions--issues)
+6. [More Examples](#more-examples)
+7. [License](#license)
+8. [Credits](#credits)
 
 ## Quick Start
 
