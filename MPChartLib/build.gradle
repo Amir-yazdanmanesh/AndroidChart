@@ -2,7 +2,7 @@ plugins {
     id 'com.android.library'
 }
 
-group = 'com.github.philjay'
+group = 'com.github.Amir-yazdanmanesh'
 
 android {
     namespace 'com.github.mikephil.charting'
