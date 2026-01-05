@@ -36,7 +36,7 @@ Add the dependency to your module's `build.gradle`:
 
 ```gradle
 dependencies {
-    implementation 'com.github.Amir-yazdanmanesh:MPAndroidChart-Compose:v3.2.0'
+    implementation 'com.github.Amir-yazdanmanesh:MPAndroidChart-Compose:v3.2.1'
 }
 ```
 
@@ -53,7 +53,7 @@ dependencies {
 <dependency>
     <groupId>com.github.Amir-yazdanmanesh</groupId>
     <artifactId>MPAndroidChart-Compose</artifactId>
-    <version>v3.2.0</version>
+    <version>v3.2.1</version>
 </dependency>
 ```
 
